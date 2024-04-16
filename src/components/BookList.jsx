@@ -94,18 +94,8 @@ const BookList = ({ books, deleteBook, fetchBooks }) => {
           }
         </tbody>
       </table>
-      <div className="book-list">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search by any field..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-      </div>
-
     
-    </div>
+    
     </div>
   );
 };

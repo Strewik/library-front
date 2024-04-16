@@ -103,69 +103,8 @@ const BookList = ({ books, deleteBook, fetchBooks }) => {
           onChange={handleSearch}
         />
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th 
-            onClick={() => handleSort('bookCode')}
-            >Book Code</th>
-            <th 
-            onClick={() => handleSort('title')}
-            >Title</th>
-            <th 
-            // onClick={() => handleSort('author')}
-            >Author</th>
-            <th 
-            // onClick={() => handleSort('genre')}
-            >Genre</th>
-            <th 
-            // onClick={() => handleSort('quantity')}
-            >Quantity</th>
-            <th 
-            // onClick={() => handleSort('availability')}
-            >Availability</th>
-            <th 
-            // onClick={() => handleSort('yearOfPublication')}
-            >Year of Publication</th>
-            <th>Edit</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-        {books?.length ?
-          sortedBooks.map(book => (
-            <tr key={book._id}>
-              <td>{book.bookCode}</td>
-              <td>{book.title}</td>
-              <td>{book.author}</td>
-              <td>{book.genre}</td>
-              <td>{book.quantity}</td>
-              <td>{book.availability}</td>
-              <td>{book.yearOfPublication}</td>
-              <td>
-                <button onClick={() => editBook(book._id)}>Edit</button>
-              </td>
-              <td>
-                <button onClick={() => deleteBook(book._id)}>Delete</button>
-              </td>
-            </tr>
-        )) :
-        <td className="border px-4 py-2 text-center" rowSpan={10} colSpan={10}>No Data Found</td>
-        }
-        </tbody>
-      </table>
-       {/* <EditBookModal
-        isOpen={editModalOpen}
-        onClose={() => setEditModalOpen(false)}
-        book={selectedBook}
-      />
 
-      <DeleteBookModal
-        isOpen={deleteModalOpen}
-        onClose={() => setDeleteModalOpen(false)}
-        onDelete={handleDelete}
-        bookId={selectedBook ? selectedBook._id : null}
-      /> */}
+    
     </div>
     </div>
   );

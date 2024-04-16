@@ -1,0 +1,36 @@
+.Home {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background: linear-gradient(to bottom, #333333, #000000);
+    color: white;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .main-content {
+    flex: 1;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+  }
+  
+  .card {
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
